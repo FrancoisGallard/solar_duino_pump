@@ -82,14 +82,14 @@ if(pumpOn){
   //Col 0 line 1
   lcd.setCursor(0, 1);
   // print the number of seconds since reset:
-  lcd.print("PUMP is ON");
+  lcd.print("PUMP is ON      ");
 
 }else{
   //Col 0 line 1
   lcd.setCursor(0, 1);
   /*Deactivate relay*/
-  lcd.print("PUMP is OFF");
-  Serial.println("PUMP is OFF");
+  lcd.print("PUMP is OFF     ");
+  Serial.println("PUMP is OFF     ");
   digitalWrite(RELAY_PIN1,1);
 }
 
